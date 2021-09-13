@@ -22,8 +22,6 @@
  - name: Atualiza a configuracao WordPress
    lineinfile:
     dest: /var/www/wordpress/wp-config.php
-    #regexp: 'database_name_here'
-    #line: "define('DB_NAME', '{{wp_mysql_db}}');"
     state: present
     backup: yes
     backrefs: yes
